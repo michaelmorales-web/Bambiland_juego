@@ -4,11 +4,11 @@ class Cabra():
     def __init__(self):
 
         self.sprite = pygame.image.load(
-            "assets/images/cabra.gif"
+            "assets/images/cabra.jpeg"
         ).convert_alpha()
 
-        self.x = 440
-        self.y = 590
+        self.x = 470
+        self.y = 600
 
         self.rect = self.sprite.get_rect()
         self.rect.x = self.x
