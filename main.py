@@ -21,7 +21,9 @@ cabra = Cabra()
 perro = Perro()
 manzana = Manzana()
 
+# Primera posición de la manzana
 manzana.reubicar(bg)
+
 # Puntos
 puntos = 0
 
@@ -45,8 +47,8 @@ while True:
 
     # Colisión con la manzana
     if cabra.rect.colliderect(manzana.rect):
-    puntos += 1
-    manzana.reubicar(bg)
+        puntos += 1
+        manzana.reubicar(bg)
 
     # Colisión con el perro
     if cabra.rect.colliderect(perro.rect):

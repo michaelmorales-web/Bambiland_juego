@@ -6,13 +6,13 @@ class Perro:
     def __init__(self):
 
         self.sprite = pygame.image.load(
-            "assets/images/perro.gif"
+            "assets/images/perro.png"
         ).convert_alpha()
 
         self.rect = self.sprite.get_rect()
 
-        self.rect.x = 870
-        self.rect.y = 650
+        self.rect.x = 900
+        self.rect.y = 720
 
         self.x = self.rect.x
         self.y = self.rect.y

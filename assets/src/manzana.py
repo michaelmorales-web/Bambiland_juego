@@ -21,12 +21,15 @@ class Manzana():
             self.rect.x = self.x
             self.rect.y = self.y
 
+            margen = 8
+
             puntos = [
-                (self.rect.left, self.rect.top),
-                (self.rect.right - 1, self.rect.top),
-                (self.rect.left, self.rect.bottom - 1),
-                (self.rect.right - 1, self.rect.bottom - 1)
-            ]
+    (self.rect.left - margen, self.rect.top - margen),
+    (self.rect.right + margen, self.rect.top - margen),
+    (self.rect.left - margen, self.rect.bottom + margen),
+    (self.rect.right + margen, self.rect.bottom + margen),
+    (self.rect.centerx, self.rect.centery)
+]
 
             libre = True
 
